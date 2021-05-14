@@ -73,6 +73,7 @@ DORA (DHCP Discover, DHCP Offer, DHCP Request, DHCP Acknowledgement)
 *Look for DHCP Server Identifier in Wireshark*
 
 **DHCP**
+![image](https://user-images.githubusercontent.com/23119194/118268419-a7aec700-b4bd-11eb-8103-f9566e13e5fd.png)
 
 ```
 User Datagram Protocol, Src Port: 68, Dst Port: 67
