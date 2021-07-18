@@ -4,8 +4,9 @@ Overview cheatsheet made for myself while going through **eLearnSecurity's Threa
 
 **Useful Links**
 [The ThreatHunting Project](https://github.com/ThreatHuntingProject/ThreatHunting/tree/master/hunts)
+
 **Threat Intelligence**
-- [Alien Vault](https://otx.alienvault.com/dashboard/new)
+[Alien Vault](https://otx.alienvault.com/dashboard/new)
 
 # Network Traffic Hunting
 
