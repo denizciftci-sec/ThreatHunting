@@ -1,6 +1,6 @@
 # THP Cheat Sheet
 
-Cheatsheet created during preperation of **eLearnSecurity's Threat Hunting Professional** Certification Exam.
+This Cheatsheet was created during preperation of **eLearnSecurity's Threat Hunting Professional** Certification Exam.
 
 **Useful Links**
 - [The ThreatHunting Project](https://github.com/ThreatHuntingProject/ThreatHunting/tree/master/hunts)
