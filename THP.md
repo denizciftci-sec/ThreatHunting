@@ -50,23 +50,21 @@ Check packet size, timing etc.
 	- *IE: Time Stamp Requests*
 
 **ICMP Tunnel Detection**
-Compare the Length overall rest packets
-And analyse the payload part
+- Compare the Length overall rest packets
+- And analyse the payload part
 ![image](https://user-images.githubusercontent.com/23119194/126067812-07cc405e-5ae1-4219-b4ed-65db5e6f6f71.png)
 
 **ICMP TimeStamp Requests**
 ![image](https://user-images.githubusercontent.com/23119194/126067820-b965c2b4-34b4-4b18-a0aa-cb7421e501f5.png)
 
 **ICMP Redirect**
-Large Number of ICMP Redirects are sent
-Forece to change 10.100.13.126 Gateway IP'sto  10.100.13.20
+- Large Number of ICMP Redirects are sent
+- Forece to change 10.100.13.126 Gateway IP'sto  10.100.13.20
 ![image](https://user-images.githubusercontent.com/23119194/126067869-0b957919-c644-4e0e-92e6-ed6005bedb99.png)
 
 
-
-
 ## TCP Threats
-*3-way handshack: SYN, SYN/ACK, ACK*
+- *3-way handshack: SYN, SYN/ACK, ACK*
 - SYN Packets sprays, smart TCP attacks, port scanning on single or multiple IPs
 - Many TCP SYN packets without corresponding SYN/ACK packets
 
