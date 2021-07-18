@@ -32,20 +32,12 @@ This cheatsheet was created during preperation of **eLearnSecurity's Threat Hunt
 Check packet size, timing etc.
 
 **Normal ARP**
+
 ![image](https://user-images.githubusercontent.com/23119194/126065206-2d83fec2-caf6-4b3c-a775-034955182739.png)
 ![image](https://user-images.githubusercontent.com/23119194/126065208-70493ca7-ce28-4b12-b320-db816107e3c3.png)
 
 
-```
-Ethernet II, Src: (MACADDR), Dst: ff:ff:ff:ff:ff:ff:
-Opcode: request (1)
-Target MAC address: 00:00:00:00:00:00:
-```
-```
-Ethernet II, Src: (MACADDR), Dst: 00:20:56:a2:f4:d0
-Opcode: reply (2)
-Sender MAC address: 00:20:56:a2:f4:d0
-```
+
 **Suspicious ARP**
 ```
 Who has 10.10.10.1?	Tell 10.10.10.100
