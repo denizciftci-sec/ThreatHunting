@@ -76,8 +76,14 @@ Check packet size, timing etc.
 - Spoofed MAC in #12, sents RST Flag
 ![image](https://user-images.githubusercontent.com/23119194/126068069-4f4b648c-6756-4dc4-b9e6-de0897d17bb4.png)
 
+**TCP Session Hijacking **
 
-```
+![image](https://user-images.githubusercontent.com/23119194/126068300-051509e0-9fef-4170-a74c-36203e61826a.png)
+
+- #15 TCP Retransmission is displayed because the sequence number and the acknowledgement number of this packet are the same as the ones in packet #11.
+- The MAC address of the client (192.168.1.4) in this packet is different than the MAC address that is included in all previous packets related to this host.
+- It looks like an attacker has taken over (hijacked) the whole Telnet session. This is also apparent in packet #17, that includes the MAC address of the attacker and the command the attacker issued (uname –a)
+
 ## DNS Threats
 - Port 53, should only be **UDP** not **TCP**
 - DNS traffic should only go to DNS servers
