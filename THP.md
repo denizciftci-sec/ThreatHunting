@@ -24,10 +24,10 @@ This cheatsheet was created during preperation of **eLearnSecurity's Threat Hunt
 
 ## ARP Theat Hunting
 
-**_Wireshark_** select View > Name Resolution > Resolve Physical Addresses
-**_Wireshark_** select Statistics > IPv4 > Statisctics > Destinations and Ports
-**_Wireshark_** select Statistics > Endpoints
-**_Wireshark_** select Statistics > Conversations
+- Wireshark select View > Name Resolution > Resolve Physical Addresses
+- Wireshark select Statistics > IPv4 > Statisctics > Destinations and Ports
+- Wireshark select Statistics > Endpoints
+- Wireshark select Statistics > Conversations
 
 **Normal ARP**
 ```
