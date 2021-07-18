@@ -64,7 +64,7 @@ Check packet size, timing etc.
 
 
 ## TCP Threats
-- *3-way handshack: SYN, SYN/ACK, ACK*
+*3-way handshack: SYN, SYN/ACK, ACK*
 - SYN Packets sprays, smart TCP attacks, port scanning on single or multiple IPs
 - Many TCP SYN packets without corresponding SYN/ACK packets
 
