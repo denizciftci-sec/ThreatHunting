@@ -20,7 +20,6 @@ This cheatsheet was created during preperation of **eLearnSecurity's Threat Hunt
 ## Hunting Tools
 - Wireshark - [PA Toolkit Plugin](https://github.com/pentesteracademy/patoolkit)
 - [Network Miner](https://www.netresec.com/?page=networkminer)
-- RSA NetWitness Investigator
 - [Mandiant IOC Editor](https://www.fireeye.com/services/freeware/ioc-editor.html)
 
 ## ARP Theats
