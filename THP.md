@@ -6,7 +6,7 @@ Overview cheatsheet made for myself while going through **eLearnSecurity's Threa
 - [The ThreatHunting Project](https://github.com/ThreatHuntingProject/ThreatHunting/tree/master/hunts)
 - [APT Groups and Operations](https://docs.google.com/spreadsheets/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/pubhtml#)
 
-**Open-Source Threat Intelligence Platform**
+- **Open-Source Threat Intelligence Platform**
 - [Alien Vault](https://otx.alienvault.com/dashboard/new)
 - [US-Cert](https://us-cert.cisa.gov/)
 - [MISP-Project](https://www.misp-project.org/)
