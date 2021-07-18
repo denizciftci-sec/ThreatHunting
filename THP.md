@@ -21,7 +21,7 @@ This cheatsheet was created during preperation of **eLearnSecurity's Threat Hunt
 - Wireshark - [PA Toolkit Plugin](https://github.com/pentesteracademy/patoolkit)
 - NetworkMiner
 - RSA NetWitness Investigator
-- Mandiant IOC Editor - [https://www.fireeye.com/services/freeware/ioc-editor.html]
+- [Mandiant IOC Editor](https://www.fireeye.com/services/freeware/ioc-editor.html)
 
 ## ARP Theats
 - Tens, hundreds etc of ARP broadcast messages in a small amount of time
