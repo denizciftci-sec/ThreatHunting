@@ -22,14 +22,12 @@ This cheatsheet was created during preperation of **eLearnSecurity's Threat Hunt
 - [Network Miner](https://www.netresec.com/?page=networkminer)
 - [Mandiant IOC Editor](https://www.fireeye.com/services/freeware/ioc-editor.html)
 
-## ARP Theats
-- Tens, hundreds etc of ARP broadcast messages in a small amount of time
+## ARP Theat Hunting
 
-- Two identical MAC addresses in the network with different IP addresses
-
-- Gratuitous ARP packets sent by attacker
-> **_Wireshark_** select View > Name Resolution > Resolve Physical Addresses
-> Check Spam ARP Requests, timing etc
+**_Wireshark_** select View > Name Resolution > Resolve Physical Addresses
+**_Wireshark_** select Statistics > IPv4 > Statisctics > Destinations and Ports
+**_Wireshark_** select Statistics > Endpoints
+**_Wireshark_** select Statistics > Conversations
 
 **Normal ARP**
 ```
