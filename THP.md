@@ -40,10 +40,7 @@ Check packet size, timing etc.
 
 **Suspicious ARP**
 ```
-Who has 10.10.10.1?	Tell 10.10.10.100
-Who has 10.10.10.2?	Tell 10.10.10.100
-Who has 10.10.10.3?	Tell 10.10.10.100
-Who has 10.10.10.5? Tell 10.10.10.100
+![image](https://user-images.githubusercontent.com/23119194/126065259-03707bb6-cd9d-4465-bb75-fd3413f7e30a.png)
 ```
 ## ICMP Threats
 - **Type 8** & **Code 0** indicate packet is an echo request
