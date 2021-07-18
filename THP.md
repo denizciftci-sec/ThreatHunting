@@ -39,11 +39,15 @@ Check packet size, timing etc.
 **ARP Scanning**
 
 ![image](https://user-images.githubusercontent.com/23119194/126065259-03707bb6-cd9d-4465-bb75-fd3413f7e30a.png)
-
+![image](https://user-images.githubusercontent.com/23119194/126067921-04443302-2856-4fa1-a694-f129e6e329bd.png)
 
 
 ## ICMP Threats
-- **Type 8** & **Code 0** indicate packet is an echo request
+
+**Suspicious ICMP**
+- Watch for sprays of ping requests
+- Unusual type/codes within packets of the request. 
+	- *IE: Time Stamp Requests*
 
 **ICMP Tunnel Detection**
 Compare the Length overall rest packets
@@ -59,10 +63,7 @@ Forece to change 10.100.13.126 Gateway IP'sto  10.100.13.20
 ![image](https://user-images.githubusercontent.com/23119194/126067869-0b957919-c644-4e0e-92e6-ed6005bedb99.png)
 
 
-**Suspicious ICMP**
-- Watch for sprays of ping requests
-- Unusual type/codes within packets of the request. 
-	- *IE: Time Stamp Requests*
+
 
 ## TCP Threats
 *3-way handshack: SYN, SYN/ACK, ACK*
@@ -72,38 +73,12 @@ Forece to change 10.100.13.126 Gateway IP'sto  10.100.13.20
 > [Wireshark TCP Reference](https://www.wireshark.org/docs/dfref/t/tcp.html)
 > **_Wireshark_** Edit > Preferences > Protocols > TCP > *(Uncheck Box)*Relative sequence numbers
 
-**Normal TCP**
-```
-Transmission Control Protocol, Seq: 0
-Flags: 0x002 (SYN)
-```
-```
-Transmission Control Protocol, Seq: 0, Ack: 1,
-Flags: 0x012 (SYN, ACK)
-[SEQ/ACK analysis]
-[This is an ACK to the segment in frame: 2]
-[The RTT to ACK the segment was: 0.0001100 seconds]
-```
-## DHCP Threats
-DORA (DHCP Discover, DHCP Offer, DHCP Request, DHCP Acknowledgement)
-*UDP Ports 67-68*
-*Look for DHCP Server Identifier in Wireshark*
+**TCP RST Attack**
 
-**DHCP**
-![image](https://user-images.githubusercontent.com/23119194/118268419-a7aec700-b4bd-11eb-8103-f9566e13e5fd.png)
+- Spoofed MAC in #12, sents RST Flag
+![image](https://user-images.githubusercontent.com/23119194/126068069-4f4b648c-6756-4dc4-b9e6-de0897d17bb4.png)
 
-```
-User Datagram Protocol, Src Port: 68, Dst Port: 67
-Bootstrap Protocol (Discover)
-Options: (53) DHCP Message Type (Discover)
-	Your (client) IP address: 0.0.0.0
-	Length: 1
-	DHCP: Discover (1)
-```
-```
-Option: (53) DHCP Message Type (Offer)
-	Length: 1
-	DHCP: Offer (2)
+
 ```
 ## DNS Threats
 - Port 53, should only be **UDP** not **TCP**
