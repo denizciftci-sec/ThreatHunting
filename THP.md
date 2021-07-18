@@ -29,6 +29,8 @@ This cheatsheet was created during preperation of **eLearnSecurity's Threat Hunt
 - Wireshark select Statistics > Endpoints
 - Wireshark select Statistics > Conversations
 
+Check packet size, timing etc.
+
 **Normal ARP**
 ```
 Ethernet II, Src: (MACADDR), Dst: ff:ff:ff:ff:ff:ff:
