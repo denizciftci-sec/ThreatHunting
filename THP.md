@@ -76,7 +76,7 @@ Check packet size, timing etc.
 - Spoofed MAC in #12, sents RST Flag
 ![image](https://user-images.githubusercontent.com/23119194/126068069-4f4b648c-6756-4dc4-b9e6-de0897d17bb4.png)
 
-**TCP Session Hijacking **
+**TCP Session Hijacking**
 
 ![image](https://user-images.githubusercontent.com/23119194/126068300-051509e0-9fef-4170-a74c-36203e61826a.png)
 
