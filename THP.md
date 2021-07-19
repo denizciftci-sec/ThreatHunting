@@ -22,12 +22,18 @@ This cheatsheet was created during preperation of **eLearnSecurity's Threat Hunt
 - [Network Miner](https://www.netresec.com/?page=networkminer)
 - [Mandiant IOC Editor](https://www.fireeye.com/services/freeware/ioc-editor.html)
 
-## ARP Theat Hunting
+## Useful Areas withing Wireshark
 
 - Wireshark select View > Name Resolution > Resolve Physical Addresses
 - Wireshark select Statistics > IPv4 > Statisctics > Destinations and Ports
 - Wireshark select Statistics > Endpoints
 - Wireshark select Statistics > Conversations
+- Wireshark select Statistics > Protocol Hierarchy (Protocol Hierarchy Statistics) #we can see interesting packet details and again confirm it
+is legitimate HTTP traffic. (unless it is not encrpyted)
+- Wireshark select File Export Objects > HTML (Export HTML Objects) #By saving the objects,they can be opened later for further inspection, especially if any 
+binaries or scripts are exported. 
+
+## ARP Theat Hunting
 
 Check packet size, timing etc.
 
@@ -64,8 +70,11 @@ Check packet size, timing etc.
 
 
 ## TCP Threats
+**Suspicious TCP**
 *3-way handshack: SYN, SYN/ACK, ACK*
-- SYN Packets sprays, smart TCP attacks, port scanning on single or multiple IPs
+- Excessive SYN packets (scanning)
+- Usage of different flags
+- Single host to multiple ports or single host to multiple nodes (scanning)
 - Many TCP SYN packets without corresponding SYN/ACK packets
 
 > [Wireshark TCP Reference](https://www.wireshark.org/docs/dfref/t/tcp.html)
@@ -76,6 +85,14 @@ Check packet size, timing etc.
 - Spoofed MAC in #12, sents RST Flag
 ![image](https://user-images.githubusercontent.com/23119194/126068069-4f4b648c-6756-4dc4-b9e6-de0897d17bb4.png)
 
+**SYN Scanning**
+Source Port Abnormalities
+![image](https://user-images.githubusercontent.com/23119194/126115674-fa0ec1b3-f7e2-445a-acfc-5d0e829cc5a7.png)
+
+Destination Port Abnormalities - Destination port 0 (TCP)
+![image](https://user-images.githubusercontent.com/23119194/126115770-f1b91d4a-9415-49fe-aac5-43ecf0333775.png)
+
+
 **TCP Session Hijacking**
 
 ![image](https://user-images.githubusercontent.com/23119194/126068300-051509e0-9fef-4170-a74c-36203e61826a.png)
@@ -85,12 +102,21 @@ Check packet size, timing etc.
 - It looks like an attacker has taken over (hijacked) the whole Telnet session. This is also apparent in packet #17, that includes the MAC address of the attacker and the command the attacker issued (uname –a)
 
 ## DNS Threats
-- Port 53, should only be **UDP** not **TCP**
+- Port 53, should only be **UDP** not **TCP** (Name Queries)
 - DNS traffic should only go to DNS servers
 - Should see DNS Responses to DNS Queries
 > [Wireshark Display Filter Reference](https://www.wireshark.org/docs/dfref/d/dns.html)
 > Look for DNS Queries with no DNS responses or vice versa.
 > Zone Tranfers occur over TCP/53
+
+**Zone Transfer**
+Query:
+![image](https://user-images.githubusercontent.com/23119194/126116442-eba60e8e-415d-4abd-962e-786b2f0dea1d.png)
+
+Response:
+![image](https://user-images.githubusercontent.com/23119194/126116649-f7c81bfb-e403-4e7f-996f-3e10919c148d.png)
+
+
 
 ## HTTP/HTTPS Threats
 **HTTP**
