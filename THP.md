@@ -22,16 +22,6 @@ This cheatsheet was created during preperation of **eLearnSecurity's Threat Hunt
 - [Network Miner](https://www.netresec.com/?page=networkminer)
 - [Mandiant IOC Editor](https://www.fireeye.com/services/freeware/ioc-editor.html)
 
-## Useful Areas withing Wireshark
-
-- Wireshark select View > Name Resolution > Resolve Physical Addresses
-- Wireshark select Statistics > IPv4 > Statisctics > Destinations and Ports
-- Wireshark select Statistics > Endpoints
-- Wireshark select Statistics > Conversations
-- Wireshark select Statistics > Protocol Hierarchy (Protocol Hierarchy Statistics) #we can see interesting packet details and again confirm it
-is legitimate HTTP traffic. (unless it is not encrpyted)
-- Wireshark select File Export Objects > HTML (Export HTML Objects) #By saving the objects,they can be opened later for further inspection, especially if any 
-binaries or scripts are exported. 
 
 ## ARP Theat Hunting
 
@@ -123,10 +113,11 @@ Response:
 Port 80, 8080 - plantext traffic, typically in FQDN format.
 
 - Traffic should *not* be encrypted in common HTTP ports
-- Search for URL encoded queries for sql injection, lfi-rfi activity
+- Search for URL encoded queries for sql injection (sqlmap, %27 = single quote %20...), lfi-rfi activity
 - User-Agent for possible scanners - *IE: sqlmap*
 - TCP Spurious Retransmission -> Investigate [TCP Zero Window](https://wiki.wireshark.org/TCP%20ZeroWindow)
 
+**Useful Areas withing Wireshark**
 > **_Wireshark_** Statistics > Conversations >  TCP Tab
 > **_Wireshark_** Statics > Protocol Hierarchy
 > **_Wireshark_** File Export Objects > HTML
